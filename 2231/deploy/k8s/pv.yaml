@@ -16,7 +16,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   local:
-    path: "//pvs"
+    path: "/pvs"
   nodeAffinity:
     required:
       nodeSelectorTerms:
