@@ -20,7 +20,7 @@ pipeline {
         GITHUB_USERNAME = "morn4u"
 
         GITHUB_URL = "https://github.com/${GITHUB_USERNAME}/kubernetes-anotherclass-sprint2.git"
-        APP_VERSION = '1.1.2'
+        APP_VERSION = '1.1.1'
         BUILD_DATE = sh(script: "echo `date +%y%m%d.%H%M%S`", returnStdout: true).trim()
 
         TAG = "${APP_VERSION}-" + "${BUILD_DATE}"
